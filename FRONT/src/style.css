@@ -1,0 +1,616 @@
+@font-face {
+    font-family: Play;
+    src: url(./fonts/Play.ttf) format('truetype');
+}
+
+/*Навигация - доделать маштабы в %*/
+#root{
+    max-width: 1920px;
+}
+.App{
+    max-width: 1920px;
+}
+h1{
+    font-family: Play;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #FFFFFF;
+    
+}
+h2{
+    
+    font-family: Play;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+
+    color: #FFFFFF;
+
+}
+h3{
+
+    font-family: Play;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+
+    color: #FFFFFF;
+}
+h4{
+    font-family: Play;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    
+
+    color: #FFFFFF;
+}
+h5{
+    font-family: Play;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    
+
+    color: #000000;
+    margin:20px;
+}
+
+.Header{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+
+    background: #161318;
+    max-width: 1920px;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.logo-upper{
+    position: absolute;
+    width: 129px;
+    height: 70px;
+    left: 150px;
+    top: 0px;
+    background: url(./images/logo.png);
+}
+.logo-upper a{
+    display:block;
+}
+.str-usl-button{
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    left: calc(50% - 150px/2 - 149px);
+    top: calc(50% - 100px/2);
+    
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.str-o-nas-button{
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    left: calc(50% - 150px/2 + 75px);
+    top: calc(50% - 100px/2);
+
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.button-auth{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 70%;
+    top: 15px;
+
+    background: #427A90;
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.button-reg{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 85%;
+    top: 15px;
+
+    background: #427A90;
+    border-radius: 30px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.text-rem{
+    position: absolute;
+    width: 680px;
+    height: 282px;
+    left: 3%;
+    top: 148px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+/* Верхний контент */
+.upper-content{
+    position: absolute;
+    width: 100%;
+    height: 694px;
+    left: 0px;
+    top: 70px;
+    max-width: 1920px;
+}
+.rectangle{
+    position: absolute;
+    width: 52%;
+    height: 10px;
+    left: 24%;
+    top: 136px;
+
+    background: #161318;
+    border-radius: 5px;
+}
+.trud-img{
+    position: absolute;
+    width: 36.7%;
+    height: 466px;
+    left: 7.8%;
+    top: 187px;
+
+    background: url(./images/trud.png) no-repeat ;
+    background-size: 100% 100%;
+    border: 5px solid #59495A;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.frame-rem{
+    position: absolute;
+    width: 41.6%;
+    height: 500px;
+    left: 50%;
+    top: 170px;
+
+    background: #427A90;
+    border: 5px solid #59495A;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.rem-avto{
+    position: absolute;
+    width: 608px;
+    height: 62px;
+    left: 90px;
+    top: 32px;
+
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Нижний контент */
+.lower-content{
+    position: absolute;
+    width: 100%;
+    height: 538px;
+    left: 0px;
+    top: 764px;
+
+    background: #427A90;
+    max-width: 1920px;
+}
+.down-cont-img-dwig{
+    position: absolute;
+    width: 281px;
+    height: 202px;
+    left: 17.6%;
+    top: 119px;
+
+    background: url(./images/down-cont1.png);
+}
+.down-cont-img-znak{
+    position: absolute;
+    width: 200px;
+    height: 229px;
+    left: 39%;
+    top: 92px;
+
+    background: url(./images/down-cont2.png);
+}
+.down-cont-img-kluch{
+    position: absolute;
+    width: 344px;
+    height: 200px;
+    left: 68%;
+    top: 121px;
+    
+    background: url(./images/down-cont3.png);
+}
+.down-cont-text-dwig{
+    position: absolute;
+    width: 196px;
+    height: 63px;
+    left: 20.4%;
+    top: 356px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.down-cont-text-znak{
+    position: absolute;
+    width: 164px;
+    height: 68px;
+    left: 40%;
+    top: 348px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.down-cont-text-kluch{
+    position: absolute;
+    width: 306px;
+    height: 88px;
+    left: 69%;
+    top: 339px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+/* Подвал */
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 286px;
+    left: 0px;
+    top: 1302px;
+
+    background: #161318;
+    max-width: 1920px;
+}
+.logo-lower{
+    position: absolute;
+    width: 300px;
+    height: 290px;
+    left: 17%;
+    top: 0px;
+
+    background: url(./images/logo1.png);
+}
+.frame-info{
+    position: absolute;
+    width: 412px;
+    height: 286px;
+    left: 35%;
+    top: 0px;
+}
+.contacts{
+    position: absolute;
+    width: 192px;
+    height: 58px;
+    left: 110px;
+    top: 24px;
+
+    line-height: 35px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+}.img-telephone{
+    position: absolute;
+    width: 35px;
+    height: 32px;
+    left: 27px;
+    top: 111px;
+
+    background: url(./images/telephone.png);
+}
+.telephone{
+    position: absolute;
+    width: 267px;
+    height: 37px;
+    left: 87px;
+    top: 108px;
+
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FBF2F2;
+}
+.img-place-map{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 27px;
+    top: 176px;
+
+    background: url(./images/map.png);
+}
+.place-map{
+    position: absolute;
+    width: 253px;
+    height: 40px;
+    left: 88px;
+    top: 171px;
+
+
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+.str-link{
+    position: absolute;
+    width: 28.6%;
+    height: 286px;
+    left: 71.4%;
+    top: 0px;
+
+}
+.str-link-uslugi{
+    position: absolute;
+    width: 208px;
+    height: 62px;
+    left: 21px;
+    top: 114px;
+
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+.str-link-o-nas{
+    position: absolute;
+    width: 208px;
+    height: 62px;
+    left: 229px;
+    top: 114px;
+
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.map{
+    position: absolute;
+    left: 124px;
+    top: 200px;
+    border: 4px solid #000000;
+    box-sizing: border-box;
+}
+.frame-text-time-work{
+    position: absolute;
+    width: 533px;
+    height: 427px;
+    left: 1057px;
+    top: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.frame-text-time-work h1{
+    color: #000000;
+}
+.operating-mode{
+    position: absolute;
+    width: 325px;
+    height: 151px;
+    left: 95px;
+    
+
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.account-photo{
+    position: absolute;
+    width: 463px;
+    height: 466px;
+    left: 107px;
+    top: 200px;
+
+    background: url(./images/accont.png);
+}
+.frame-red{
+    position: absolute;
+    width: 502px;
+    height: 257px;
+    left: 916px;
+    top: 250px;
+
+}
+.info-acc{
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    left: 66px;
+    top: 100px;
+
+}
+.info-acc-i{
+    width: 500px;
+    height: 100px;
+    left: 44px;
+    top: 0px;
+
+    line-height: 42px;
+    display: flex;
+    text-align: center;
+}
+.acc-icon{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 88%;
+    top: 0px;
+
+    background: url(./images/icon-acc.png) no-repeat;
+}
+.auto-name{
+    position: absolute;
+    width: 433px;
+    height: 128px;
+    left: 55%;
+    top: 0px;
+
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.poisk{
+    position: absolute;
+    width: 20%;
+    height: 50px;
+    left: 40%;
+    top: 172px;
+    display: flex;
+    justify-content: center;
+}
+.poisk input{
+    width: 100%;
+
+    border: 3px solid #427A90;
+    box-sizing: border-box;
+    font-size:36px;
+ 
+}
+.table-u{
+    position: absolute;
+    width: 89%;
+    height: 800px;
+    left: 99px;
+    top: 80px;
+
+    background: #EEEEEE;
+    border: 5px solid #161318;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.table-u th {
+    font-size:36px;
+    background-color:#B3C4E0;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #729ea5;
+    font-family: Play;
+
+}
+.table-u tr {
+    background-color:#d4e3e5;
+}
+.table-u td {
+    font-size:24px;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #729ea5;
+    font-family: Play;
+}
+.table-u tr:hover {
+    background-color:#ffffff;
+}
+.table-u button {
+    width: 200px;
+    height: 30px;
+    background-color: #427A90;
+    border-radius: 10px;
+}
+.tra input{
+    justify-content: center;
+    text-align: left;
+    font-size: 40px;
+    border-radius: 10px;
+}
+.model__buttton{
+    margin-top: 40px;
+    text-align: center;
+}
+.model__buttton input{
+    font-size: 20px;
+    color: #B3C4E0;
+    border-radius: 20px;
+}
+.tra h3{
+    margin:auto;
+}
+.img_account{
+    position: absolute;
+    width: 463px;
+    height: 466px;
+    left: 10%;
+    top: 150px;
+
+    background: url(../src/images/account.png);
+}
+.table-acc{
+    position: absolute;
+    width: 60%;
+    height: auto;
+    top:110%;
+    left: 20%;
+
+    background: #EEEEEE;
+    border: 5px solid #161318;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.table-acc th {
+    font-size:36px;
+    background-color:#B3C4E0;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #729ea5;
+    font-family: Play;
+
+}
+.table-acc tr {
+    background-color:#d4e3e5;
+}
+.table-acc td {
+    font-size:24px;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #729ea5;
+    font-family: Play;
+}
+.table-acc tr:hover {
+    background-color:#ffffff;
+}

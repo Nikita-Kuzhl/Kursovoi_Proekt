@@ -1,0 +1,6 @@
+Staff:
+    "login":"ASD"
+    "pass":"asd"
+Owners:
+    "login":"ASDF"
+    "pass":"asd"

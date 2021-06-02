@@ -1,0 +1,37 @@
+.modal_wrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,.2);
+    backdrop-filter: blur(10px);
+    height: 100%;
+    left: 0;
+}
+.modal_wrapper.open{
+    height: 100%;
+    display: block;
+}
+.modal_wrapper.close{
+    height:0;
+    display: none;
+}
+.modal_body {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    margin-top: 5%;
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 100%;
+}
+.modal_body h3{
+    color:black;
+    text-align: center;
+    margin:0;
+}
+.modal_close{
+    text-align: right;
+    font-size: 40px;
+    color:#427A90;
+    cursor: pointer;
+}
